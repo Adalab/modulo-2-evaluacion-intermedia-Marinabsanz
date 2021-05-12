@@ -1,23 +1,9 @@
 'use strict'
-/* let randomNUmber = Math.random();
-if (randomNUmber <=20)  {
+//const randomNumber = Math.random();
 
-console.log('Has ganado');
+const randomNumber= document.querySelector ('js-input');
 
-} else  {
-    console.log ('prueba otra vez');
-}
-
-for(let i=0; i>10; i=i+1) {
-
-}
-
-randomNUmber = Math.random ();
-if (randomNUmber <=0.5)  {
-
-    console.log('SI');
-    
-    } else  {
-        console.log ('NO');
-    }
-*/
+const buttonEl=document.querySelector('js-write');
+const Pist= document.querySelector ('js-pista');
+const Try= document.querySelector ('js-try');
+const ResultUser= document.querySelector ('js-result');
