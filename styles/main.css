@@ -6,7 +6,6 @@
   border: none;
   outline: none;
   box-sizing: border-box;
-  
 }
 
 a,
@@ -17,28 +16,26 @@ a:active {
   color: inherit;
 }
 
-
-label{
-    margin-top: 30px;
-    
+label {
+  margin-top: 30px;
 }
 
-.container{
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
 }
 
 .write {
-background-color: aqua;
-text-align: center;
-color: white;
-font-size: 20px;
-border: solid 2px;
+  background-color: aqua;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  border: solid 2px;
+  width: fit-content;
 }
 
-input  {
-    background-color: whitesmoke;
+input {
+  background-color: whitesmoke;
+  width: fit-content;
 }
