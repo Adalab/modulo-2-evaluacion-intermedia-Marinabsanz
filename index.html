@@ -10,16 +10,18 @@
 </head>
 
 <body>
+    <main> 
+        <hi><strong>Adivina el número</strong></hi>
     <form class="container">
-        <label for="input"><strong>Escribe aquí tu número</strong></label>
-        <input type="text" id="input" class="js-input" />
+        <label for="number"><strong>Escribe aquí tu número</strong></label>
+        <input type="text" id="number" class="js-number" />
         <input type="submit" name="PRUEBA" value="PRUEBA" class="write js-write" />
         <input type="text" name="Pista" id="number" class="pista js-pista" placeholder="Pista:Escribe el número y dale a prueba :)">
         
     </form>
-    <p class="result">Nº de intentos</p>
-    <input type="text" name="result" class="result js-result">
-
+    <p class="result">Nº de intentos: 0</p>
+    <p class= "result js-result"></p>
+</main>
 
     <script src="./js/jsmain.js"></script>
 </body>
