@@ -1,42 +1,24 @@
-
-/*
-PROCESO 1
-1-Enviar mensaje a usuario
-2-Definir el nº random--- ¿cuándo? AL cargar página
-3-coger nº de usuario- al hacer click en el boton
-4- comparaciones y enviar mensaje
--(esto una vez que ya tengo el valor de la usuaria)
-
-PROCESO 2
-1-contar el número de intentos
-
-
-*/
-/*
-
-'use strict'
-//const randomNumber = Math.random();
-
+'use strict' ;
 const randomNumberEl= document.querySelector ('js-number') 
-const buttonEl=document.querySelector('js-write');
+const buttonEl=document.querySelector('js-btn');
 const Pist= document.querySelector ('js-pista');
 const Try= document.querySelector ('js-try');
 const ResultUser= document.querySelector ('js-result');
-
 
 function getRandomNumber(max) {
 return Math.ceil(Math.random() * max);
 }
 
 const randomNumber= getRandomNumber(100);
-console.log (randomNumber);
-
+console.log(randomNumber);
 
 let calcul = 0;
 function calculate() {
-return `Nº de intentos: ` + (calcul += 1);
-}
 
+} 
+
+/* return `Nº de intentos:  + (calcul += 1);
+  */
 
 function writeNumber (event) {
     event.preventDefault();
@@ -51,13 +33,11 @@ function reply () {
 
     } else if (randomNumberEl >=20)
     return `demasiado bajo`; 
-----------SI LO USO DEBERIA TENER Q USAR INNER.HTML TB
-SE ME HA QUEDADO FANTASMA EL RETURN
+
 } 
 
-*/
 
-
+/*
 'use strict'
 function getRandomNumber (max) {
     return Math.ceil (Math.random()* max);
@@ -112,3 +92,7 @@ function handleClick (event){
 }
 
  btn.addEventListener("click", handleClick);
+
+
+
+ */
