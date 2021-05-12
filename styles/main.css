@@ -6,7 +6,7 @@
   border: none;
   outline: none;
   box-sizing: border-box;
-  background-color: aqua;
+  
 }
 
 a,
@@ -15,4 +15,31 @@ a:hover,
 a:active {
   text-decoration: none;
   color: inherit;
+}
+
+
+label{
+    margin-top: 30px;
+    
+    
+}
+
+.container{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    
+}
+
+.write {
+background-color: aqua;
+text-align: center;
+color: white;
+font-size: 20px;
+border: solid 2px;
+}
+
+input  {
+    background-color: whitesmoke;
 }
