@@ -35,6 +35,12 @@ label {
   width: fit-content;
 }
 
+.js-number {
+  background-color: whitesmoke;
+  width: fit-content;
+  
+}
+
 input {
   background-color: whitesmoke;
   

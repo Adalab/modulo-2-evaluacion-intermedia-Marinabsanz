@@ -15,18 +15,17 @@ console.log(randomNumber);
 let calcul = 0;
 function calculate() {
 
-} 
 
-/* return `Nº de intentos:  + (calcul += 1);
-  */
+ //return `Nº de intentos:  + (calcul += 1);
 
+ 
 function writeNumber (event) {
     event.preventDefault();
     ResultUser.innerHTML = calculate();
     Pist.innerHTML = reply2 (randomNumberEl);
 
 }
-//Pist.addEventListener ('click',writeNumber);
+Pist.addEventListener ('click',writeNumber);
 function reply () {
     if (randomNumberEl <=80){
         return `demasiado alto`;
@@ -37,7 +36,6 @@ function reply () {
 } 
 
 
-/*
 'use strict'
 function getRandomNumber (max) {
     return Math.ceil (Math.random()* max);
@@ -45,7 +43,6 @@ function getRandomNumber (max) {
     const numberRandom= getRandomNumber(100);
     console.log (numberRandom);
 
-    //me interesa el input y el boton
 
     const btn= document.querySelector("js-btn");
     const inputElement = document.querySelector (".js-input");
@@ -81,9 +78,9 @@ function  counter(){
   let cont = 0
   cont++;
   msjCounter.innerHTML = `El nº de intentos ${cont}` ;
-    //let calcul = 0;
-   // function calculate() {
-    //return `Nº de intentos: ` + (calcul += 1);
+   let calcul = 0;
+   function calculate() {
+    return `Nº de intentos: ` + (calcul += 1);
     }
 function handleClick (event){
     event.preventDefault();
@@ -94,5 +91,4 @@ function handleClick (event){
  btn.addEventListener("click", handleClick);
 
 
-
- */
+}
