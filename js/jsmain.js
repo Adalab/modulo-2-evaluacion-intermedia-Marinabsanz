@@ -1,40 +1,40 @@
-'use strict'
-//const randomNumber = Math.random();
-
-const randomNumberEl= document.querySelector ('js-number') 
-const buttonEl=document.querySelector('js-write');
-const Pist= document.querySelector ('js-pista');
-const Try= document.querySelector ('js-try');
-const ResultUser= document.querySelector ('js-result');
-
-
+'use strict';
+/*Generando el número random*/
 function getRandomNumber(max) {
-return Math.ceil(Math.random() * max);
+    return Math.ceil(Math.random() * max);
+  }
+​
+  const randomNumber = getRandomNumber(100); 
+  console.log("El número random es", randomNumber);
+/* hasta aquí*/
+​
+const button = document.querySelector(".js-button");
+const clue = document.querySelector ('.js-cl');
+const attemps = document.querySelector ('.js-att');
+const userNumber = document.querySelector ('.js-user_number'); 
+​
+const compare = () => {
+    const userNumber2 = userNumber.value;
+    const userNumbervalue = parseInt (userNumber2);
+    console.log (userNumbervalue);
+    if (userNumbervalue === randomNumber) {
+       clue.innerHTML = 'Has ganado'; 
+    }else if (userNumber2 < 0 || userNumber2 > 100 ) {
+        clue.innerHTML = `El número tiene que ser mayor que cero y menor que cien`; 
+    } else if (userNumber2 < randomNumber) {
+        clue.innerHTML = `El número es mayor que ${userNumber2}`;
+    }else if (userNumber2 > randomNumber) {
+        clue.innerHTML = `El número es menor que ${userNumber2}`;
+    }
 }
+button.addEventListener("click", compare);
 
-const randomNumber= getRandomNumber(100);
-console.log (randomNumber);
+const userCounter = document.querySelector(".js-att");
+let counter = 0;
+function countTries() {
+  counter += 1;
 
-
-let calcul = 0;
-function calculate() {
-return `Nº de intentos: ` + (calcul += 1);
+  userCounter.innerHTML = `Número de intentos ${counter}`;
 }
-
-
-function writeNumber (event) {
-    event.preventDefault();
-    ResultUser.innerHTML = calculate();
-    Pist.innerHTML = reply2 (randomNumberEl);
-
-}
-//Pist.addEventListener ('click',writeNumber);
-function reply () {
-    if (randomNumberEl <=80){
-        return `demasiado alto`;
-
-    } else if (randomNumberEl >=20)
-    return `demasiado bajo`; 
-
-} 
-
+​
+button.addEventListener("click", countTries);

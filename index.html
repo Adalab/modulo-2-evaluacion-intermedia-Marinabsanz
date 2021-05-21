@@ -2,28 +2,23 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulo 2-Evaluación Intermedia- Marina Benítez Sánchez</title>
-    <link rel="stylesheet" href="./styles/main.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <title> evaluación intermedia módulo 2</title>
 </head>
 
 <body>
-    <main> 
-        <hi><strong>Adivina el número</strong></hi>
-    <form class="container">
-        <label for="number"><strong>Escribe aquí tu número</strong></label>
-        <input type="text" id="number" class="js-number" />
-        <input type="submit" name="PRUEBA" value="PRUEBA" class="write js-write" />
-        <input type="text" name="Pista" id="number" class="pista js-pista" placeholder="Pista:Escribe el número y dale a prueba :)">
-        
+    <h1>Adivina el número</h1>
+    <form action="#">
+        <label>Introduce aquí tu número:</label>
+        <input type="number" class=" user js-user_number" />
+        <button type="button" class="js-button">Prueba</button>
+        <p class="clue js-cl">Pista:Escribe el número y dale Prueba</p>
+        <p class="attemps js-att">Número de intentos:0</p>
     </form>
-    <p class="result">Nº de intentos: 0</p>
-    <p class= "result js-result"></p>
-</main>
-
-    <script src="./js/jsmain.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
